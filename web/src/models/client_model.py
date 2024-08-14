@@ -9,7 +9,6 @@ from core import db
 from models import nsql
 from utils import utils
 
-# only used in ngscpa.com.hk
 
 class Client(db.Model, nsql.Model):
     
