@@ -1,0 +1,10 @@
+import os
+
+DB_URI = ""
+DEBUG = True
+
+JWT_SECRET_KEY = ""
+JWS_SECRET_KEY = ""
+STS_SECRET_KEY = ""
+
+UPLOAD_FOLDER = ""

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		{% block title %}
+		{% endblock %}
+		<title>Some webpage</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<link rel="stylesheet" type="text/css" href="static/css/main.css">
+		<link rel="stylesheet" type="text/css" href="static/bootstrap/css/bootstrap.css">
+		{% block header %}
+		{% endblock %}
+		
+	</head>
+	<body>
+		<div id="header-inner">
+		
+		<div id="top-panel">
+			
+			<div id="left-top-panel">
+				<h1 id="header-name"><a href="/">Some webpage</a> </h1>
+			</div>
+			
+				<div id="right-top-panel">
+					<a href="/"><i class="icon-home icon-white"></i> Home</a>
+					
+				</div>
+				<div id="right-top-panel-btn">
+					
+				</div>
+		</div>
+		</div><!--end of header-inner-->
+		
+		<div id="notification"></div>
+			{% block toppanel %}
+			{% endblock %}
+		<div id="container">
+			{% block content %}
+			{% endblock %}
+		</div>
+		
+			{% block secondary %}
+			{% endblock %}
+			
+		<div id="footer">
+			<div id="footer-panel">
+			<ul>
+				<li><a href="/privacy-policy">Privacy</a></li>
+				<li><a href="/disclaimer">Disclaimer</a></li>
+				<li><a href="/how-it-works">How it works</a></li>
+				<li><a href="/about">關於 Experience 280</a></li>
+				<li>Copyright © 2024</li>
+			</ul>
+			
+			</div>
+		</div>
+	{% block script%}
+	{% endblock %}
+	
+	<script>
+	entering_url = window.location.href;
+	
+	</script>
+	
+	<script src="/js/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+	{% block scriptbottom %}
+	{% endblock %}
+	
+	<script>
+	  
+	</script>
+	</body>
+	
+	
+	
+</html>
