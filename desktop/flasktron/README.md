@@ -1,1 +1,1 @@
-# Flask + electron test
+# Flask + electron app
